@@ -3,7 +3,7 @@
 /* File description: Contain functions for activation and changing  */
 /*                   velocity of motors  		           */
 /* Author name:      Lucas_C e Matheus_Z                            */
-/* Creation date:    25/10/2016                                     */
+/* Creation date:    11/10/2016                                     */
 /* ***************************************************************** */
 #include "es670_peripheral_board.h"
 #include "pwm_motor.h"
