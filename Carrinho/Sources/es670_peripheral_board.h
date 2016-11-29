@@ -4,7 +4,7 @@
 /*                     of the peripheral board for the ES670 hardware*/
 /* Author name:      dloubach                                        */
 /* Creation date:    16out2015                                       */
-/* Revision date:    25fev2016                                       */
+/* Revision date:    19nov2016                                       */
 /* ***************************************************************** */
 
 #ifndef SOURCES_ES670_PERIPHERAL_BOARD_H_
