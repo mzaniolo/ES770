@@ -1,7 +1,7 @@
-/* ***************************************************************** */
+//* ***************************************************************** */
 /* File name:       encoder.c                                       */
 /* File description: Contain functions for activation and reading  */
-/*                   of the system encoders		           */
+/*                   of the system encoders		          			 */
 /* Author name:      Lucas_C e Matheus_Z                            */
 /* Creation date:    25/10/2016                                     */
 /* ***************************************************************** */
@@ -56,7 +56,7 @@ void encoder_init(void)
 /* ************************************************ */
 /* Method name:        encoder_read                 */
 /* Method description: Reads the encoder value  of  */
-/*			chosen motor		    */
+/*							chosen motor		    */
 /* Input params:       int iMotor                   */
 /* Output params:      n/a                          */
 /* ************************************************ */
@@ -72,8 +72,6 @@ int encoder_read(int iMotor){
 	}
 	return temp;
 }
-
-
 
 
 

@@ -1,9 +1,4 @@
-/*
- * util.c
- *
- *  Created on: 05/11/2016
- *      Author: ES670A
- */
+
 
 /* ***************************************************************** */
 /* File name:        util.c                                          */
@@ -16,7 +11,7 @@
 /*                                                                   */
 /* Author name:      dloubach                                        */
 /* Creation date:    09jan2015                                       */
-/* Revision date:    26out2015                                       */
+/* Revision date:    05nov2016                                       */
 /* ***************************************************************** */
 
 #include "util.h"
@@ -134,8 +129,8 @@ void util_genDelay100ms(void)
 }
 
 /* ************************************************ */
-/* Method name:        util_genDelay10ms            */
-/* Method description: generates ~   10 mili sec    */
+/* Method name:        util_genDelay100ms            */
+/* Method description: generates ~   100 mili sec    */
 /* Input params:       n/a                          */
 /* Output params:      n/a                          */
 /* ************************************************ */

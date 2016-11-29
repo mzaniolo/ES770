@@ -1,7 +1,7 @@
-/* ***************************************************************** */
+//* ***************************************************************** */
 /* File name:         pwm_mtotor.c                                  */
 /* File description: Contain functions for activation and changing  */
-/*                   velocity of motors  		           */
+/*                   velocity of motors  		                     */
 /* Author name:      Lucas_C e Matheus_Z                            */
 /* Creation date:    11/10/2016                                     */
 /* ***************************************************************** */
@@ -70,9 +70,3 @@ void motor_change_percentage(int iPercent, int iMotorNum) {
 		TPM0_C2V = iPercent*50; //PWM %
 	}
 }
-
-
-
-
-
-

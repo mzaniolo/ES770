@@ -1,10 +1,10 @@
-/*
- * spline.c
- *
- *  Created on: 05/11/2016
- *      Author: ES670A
- */
-
+ //* ***************************************************************** */
+/* File name:        spline.c                                  	     */
+/* File description: Contain functions for line detection with	     */
+/*                   spline method          	          			 */
+/* Author name:      Lucas_C e Matheus_Z                             */
+/* Creation date:    5/11/2016                                       */
+/* ***************************************************************** */
 
 float CRSpline (float p0, float p1, float p2, float p3, float t){
 

@@ -1,25 +1,66 @@
-/*
- * sensor_hal.h
- *
- *  Created on: 04/10/2016
- *      Author: ES670A
- */
+
+ //* ***************************************************************** */
+/* File name:        sensor_hal.h                                  */
+/* File description: Contain functions for activation and reading    */
+/*                   of the system line sensors	          			 */
+/* Author name:      Lucas_C e Matheus_Z                             */
+/* Creation date:    4/10/2016                                       */
+/* ***************************************************************** */
 
 #ifndef SOURCES_SENSOR_HAL_H_
 #define SOURCES_SENSOR_HAL_H_
+/* ************************************************ */
+/* Method name:        sensor_initSensor	        */
+/* Method description: Initialize Sensors on the    */
+/*						board						*/
+/* Input params:       n/a			                */
+/* Output params:      n/a						    */
+/* ************************************************ */
+void sensor_initSensor(void);
 
-void sensor_initSensor();
+/* ************************************************ */
+/* Method name:        sensor_setEmissor            */
+/* Method description: Sets the desired emitter     */
+/* Input params:       int iE                       */
+/* Output params:      n/a                          */
+/* ************************************************ */
+void sensor_setEmissor(int iE);
 
-void sensor_setEmissor(int E);
+/* ************************************************ */
+/* Method name:        sensor_clearEmissor          */
+/* Method description: Clears the desired emitter  */
+/* Input params:       int iE                       */
+/* Output params:      n/a                          */
+/* ************************************************ */
+void sensor_clearEmissor(int iE);
 
-void sensor_clearEmissor(int E);
+/* ************************************************ */
+/* Method name:        sensor_getValue		        */
+/* Method description: Gets the data normalized in  */
+/*						ADC	specific Channel for 	*/
+/*						calibration					*/
+/* Input params:       iChannel		                */
+/* Output params:      int value for the sensor     */
+/* ************************************************ */
+float sensor_getValue(int iChannel){
 
-int sensor_getValue(int Channel);
+/* ************************************************ */
+/* Method name:        sensor_calibracao	        */
+/* Method description: Gets the data for sensor     */
+/*						calibration					*/
+/* Input params:       n/a			                */
+/* Output params:      n/a						    */
+/* ************************************************ */
+void sensor_calibracao (void);
 
-void sensor_calibracao(void);
+/* ************************************************ */
+/* Method name:        sensor_getRawData	        */
+/* Method description: Gets the data converted in   */
+/*						ADC	specific Channel		*/
+/* Input params:       iChannel		                */
+/* Output params:      int value of ADC0_RA         */
+/* ************************************************ */
+int sensor_getRawData(int iChannel);
 
-int sensor_getRawData(int Channel);
-
-//int *sensor_Test();
 
 #endif /* SOURCES_SENSOR_HAL_H_ */

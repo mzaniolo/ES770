@@ -19,7 +19,7 @@ void encoder_init(void);
 /* ************************************************ */
 /* Method name:        encoder_read                 */
 /* Method description: Reads the encoder value  of  */
-/*			                chosen motor		            */
+/*			           chosen motor		            */
 /* Input params:       int iMotor                   */
 /* Output params:      n/a                          */
 /* ************************************************ */

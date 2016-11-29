@@ -7,7 +7,6 @@
 /* Revision date:    19nov2016                                       */
 /* ***************************************************************** */
 
-
 #ifndef SOURCES_ES670_PERIPHERAL_BOARD_H_
 #define SOURCES_ES670_PERIPHERAL_BOARD_H_
 
@@ -176,5 +175,4 @@
 
 
 #endif /* SOURCES_ES670_PERIPHERAL_BOARD_H_*/
-
 

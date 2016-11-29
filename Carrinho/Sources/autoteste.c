@@ -1,5 +1,4 @@
-
-/* ***************************************************************** */
+//* ***************************************************************** */
 /* File name:        autoteste.c                                    */
 /* File description: Contém funções utilizadas para o autoteste     */
 /*                   das difrentes partes de harware do sistema     */
@@ -21,9 +20,9 @@
 /* ************************************************ */
 /* Method name:        autoteste_leds               */
 /* Method description: realiza o teste dos LEDs do  */
-/*			sistema			    */
-/* Input params:       n/a			    */
-/* Output params:      n/a                         */
+/*						sistema	      				 */
+/* Input params:       n/a			   				 */
+/* Output params:      n/a                     	    */
 /* ************************************************ */
 void autoteste_leds(void){
 	SIM_SCGC5 |= SIM_SCGC5_PORTC(CGC_CLOCK_ENABLED);
@@ -41,8 +40,8 @@ void autoteste_leds(void){
 /* ************************************************ */
 /* Method name:        autoteste_leds               */
 /* Method description: realiza o teste dos motores  */
-/*			do sistema		    */
-/* Input params:       n/a			    */
+/*						do sistema	     	   		 */
+/* Input params:       n/a			                 */
 /* Output params:      n/a                         */
 /* ************************************************ */
 void autoteste_motor(void){

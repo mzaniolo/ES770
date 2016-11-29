@@ -7,7 +7,7 @@
 /*                   For the development kit McLab2                  */
 /* Author name:      dloubach                                        */
 /* Creation date:    09jan2015                                       */
-/* Revision date:    26out2015                                       */
+/* Revision date:    05nov2015                                       */
 /* ***************************************************************** */
 
 #ifndef UTIL_H
@@ -47,10 +47,13 @@ void util_genDelay1ms(void);
 /* Output params:      n/a                          */
 /* ************************************************ */
 void util_genDelay10ms(void);
-
+/* ************************************************ */
+/* Method name:        util_genDelay100ms            */
+/* Method description: generates ~   100 mili sec    */
+/* Input params:       n/a                          */
+/* Output params:      n/a                          */
+/* ************************************************ */
 void util_genDelay100ms(void);
-
-void util_genDelay1s(void);
 
 #endif /* UTIL_H */
 
