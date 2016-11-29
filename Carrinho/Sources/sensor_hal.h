@@ -42,7 +42,7 @@ void sensor_clearEmissor(int iE);
 /* Input params:       iChannel		                */
 /* Output params:      int value for the sensor     */
 /* ************************************************ */
-float sensor_getValue(int iChannel){
+float sensor_getValue(int iChannel);
 
 /* ************************************************ */
 /* Method name:        sensor_calibracao	        */
