@@ -12,7 +12,7 @@
 
 
 /* ************************************************** */
-/* Method name: 	   timer_initTPM1AsPWM        */
+/* Method name: 	   motor_initTPM1AsPWM        */
 /* Method description:  configure Timer1 to act as PWM */
 /*			and initialize motor with     */
 /*			desired velocity              */
