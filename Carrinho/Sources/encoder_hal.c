@@ -1,9 +1,10 @@
-/*
- * encoder_hal.c
- *
- *  Created on: 25/10/2016
- *      Author: ES670A
- */
+/* ***************************************************************** */
+/* File name:       encoder.c                                       */
+/* File description: Contain functions for activation and reading  */
+/*                   of the system encoders		           */
+/* Author name:      Lucas_C e Matheus_Z                            */
+/* Creation date:    25/10/2016                                     */
+/* ***************************************************************** */
 
 #include "es670_peripheral_board.h"
 #include "fsl_clock_manager.h"
@@ -13,15 +14,14 @@
 
 
 /* ************************************************ */
-/* Method name:        tachometer_init              */
-/* Method description: Initialize the tachometer    */
-/* 					   device						*/
+/* Method name:        encoder_init                 */
+/* Method description: Initialize the encoder        */
 /* Input params:       n/a                          */
 /* Output params:      n/a                          */
 /* ************************************************ */
 void encoder_init(void)
 {
-	/* Init Encoder pin */
+		/* Init Encoder pin */
 		SIM_SCGC5 |= SIM_SCGC5_PORTC(1);
 		PORTC_PCR12 = PORT_PCR_MUX(ENC1_ALT);
 		PORTC_PCR13 = PORT_PCR_MUX(ENC2_ALT);
@@ -52,6 +52,25 @@ void encoder_init(void)
 		TPM1_MOD = 0b1111111111111111;
 		TPM2_MOD = 0b1111111111111111;
 
+}
+/* ************************************************ */
+/* Method name:        encoder_init                 */
+/* Method description: Reads the encoder value  of  */
+/*			chosen motor		    */
+/* Input params:       int iMotor                   */
+/* Output params:      n/a                          */
+/* ************************************************ */
+int encoder_read(int iMotor){
+	int temp;
+	if (iMotor == 1){
+		temp = TPM1_CNT;
+		TPM1_CNT = 0;
+	}else if (iMotor == 2){
+		temp = TPM2_CNT;
+		TPM2_CNT = 0;
+
+	}
+	return temp;
 }
 
 
