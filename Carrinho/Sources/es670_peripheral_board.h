@@ -7,6 +7,7 @@
 /* Revision date:    19nov2016                                       */
 /* ***************************************************************** */
 
+
 #ifndef SOURCES_ES670_PERIPHERAL_BOARD_H_
 #define SOURCES_ES670_PERIPHERAL_BOARD_H_
 
@@ -155,7 +156,25 @@
 #define ENC2_ALT              	4U
 /*                 END OF Encoders definitions             */
 
+/*                 LED  Definitions                    */
+#define L1_PORT_BASE_PNT            PORTC                                   /* peripheral port base pointer */
+#define L1_GPIO_BASE_PNT            PTC                                     /* peripheral gpio base pointer */
+
+#define L1_PIN                     9U                                      /* led/switch #1 pin */
+#define L1_DIR_OUTPUT              (GPIO_OUTPUT << L1_PIN)
+#define L1_DIR_INPUT               (GPIO_OUTPUT << L1_PIN)
+#define L1_ALT                     1U                                   /* GPIO alternative */
+
+#define L2_PORT_BASE_PNT            PORTD                                   /* peripheral port base pointer */
+#define L2_GPIO_BASE_PNT            PTD                                     /* peripheral gpio base pointer */
+
+#define L2_PIN                     7U                                      /* led/switch #1 pin */
+#define L2_DIR_OUTPUT              (GPIO_OUTPUT << L2_PIN)
+#define L2_DIR_INPUT               (GPIO_OUTPUT << L2_PIN)
+#define L2_ALT                     1U                                   /* GPIO alternative */
+/*                 END OF LED definitions             */
 
 
 #endif /* SOURCES_ES670_PERIPHERAL_BOARD_H_*/
+
 
